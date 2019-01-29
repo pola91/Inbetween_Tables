@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "ViewController.numberOfSections() -&gt; Int:ViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InBetweenCollectionView.collectionView(UICollectionView, cellForItemAt : IndexPath) -&gt; UICollectionViewCell:InBetweenCollectionView.swift">
+      </ContextState>
+      <ContextState
+         contextName = "ListCell.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:ListCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(inBetweenDataSource?.InBetweenTableView( numberOfRowsInSection:listTableView.tag))">
+            </PersistentString>
+            <PersistentString
+               value = "listTableView.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "ListCell.numberOfSections(in : UITableView) -&gt; Int:ListCell.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inBetweenDataSource?.InBetweenTableView( numberOfRowsInSection:self.tag)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "InBetweenCollectionView.collectionView(UICollectionView, numberOfItemsInSection : Int) -&gt; Int:InBetweenCollectionView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "inBetweenDataSource?.numberOfSections()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

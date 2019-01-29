@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="list_cell" reuseIdentifier="" id="h5c-QI-nMv" customClass="ListCell" customModule="InBetweenCollectionViewsDragAndDrop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="224" height="317"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="224" height="317"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="224" placeholderIntrinsicHeight="600" translatesAutoresizingMaskIntoConstraints="NO" id="9IE-AY-4Hc">
+                        <rect key="frame" x="0.0" y="5" width="224" height="600"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="224" placeholderIntrinsicHeight="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="vqo-xg-OWy">
+                                <rect key="frame" x="0.0" y="0.0" width="224" height="0.0"/>
+                                <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="av2-XW-5WP"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="184" placeholderIntrinsicHeight="307" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="n8P-4K-kyo">
+                                <rect key="frame" x="5" y="0.0" width="214" height="307"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="224" placeholderIntrinsicHeight="293" translatesAutoresizingMaskIntoConstraints="NO" id="DTQ-AK-BMM">
+                                <rect key="frame" x="0.0" y="307" width="224" height="293"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="227" id="tis-5k-mGq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="n8P-4K-kyo" firstAttribute="leading" secondItem="9IE-AY-4Hc" secondAttribute="leading" constant="5" id="61d-x5-2nG"/>
+                            <constraint firstItem="DTQ-AK-BMM" firstAttribute="top" secondItem="n8P-4K-kyo" secondAttribute="bottom" id="6mc-5x-wfh"/>
+                            <constraint firstAttribute="trailing" secondItem="n8P-4K-kyo" secondAttribute="trailing" constant="5" id="7aM-1a-8jH"/>
+                            <constraint firstAttribute="bottom" secondItem="DTQ-AK-BMM" secondAttribute="bottom" id="9jG-gi-F3V"/>
+                            <constraint firstItem="DTQ-AK-BMM" firstAttribute="centerX" secondItem="9IE-AY-4Hc" secondAttribute="centerX" id="Dw0-u6-fvh"/>
+                            <constraint firstItem="n8P-4K-kyo" firstAttribute="centerX" secondItem="9IE-AY-4Hc" secondAttribute="centerX" id="ERI-TB-r9B"/>
+                            <constraint firstAttribute="trailing" secondItem="vqo-xg-OWy" secondAttribute="trailing" id="Em6-66-y07"/>
+                            <constraint firstItem="vqo-xg-OWy" firstAttribute="top" secondItem="9IE-AY-4Hc" secondAttribute="top" id="K4l-H0-qZK"/>
+                            <constraint firstItem="n8P-4K-kyo" firstAttribute="top" secondItem="vqo-xg-OWy" secondAttribute="bottom" id="Rxj-EX-tWG"/>
+                            <constraint firstItem="n8P-4K-kyo" firstAttribute="centerX" secondItem="9IE-AY-4Hc" secondAttribute="centerX" id="Wir-4J-FEB"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="600" id="jZf-Dc-jff"/>
+                            <constraint firstItem="n8P-4K-kyo" firstAttribute="centerX" secondItem="9IE-AY-4Hc" secondAttribute="centerX" id="kS0-Kp-N3P"/>
+                            <constraint firstItem="DTQ-AK-BMM" firstAttribute="width" secondItem="9IE-AY-4Hc" secondAttribute="width" id="uCw-CZ-4YE"/>
+                            <constraint firstItem="vqo-xg-OWy" firstAttribute="centerX" secondItem="9IE-AY-4Hc" secondAttribute="centerX" id="zCe-q2-fbE"/>
+                            <constraint firstItem="vqo-xg-OWy" firstAttribute="leading" secondItem="9IE-AY-4Hc" secondAttribute="leading" id="zld-lR-7vG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="9IE-AY-4Hc" firstAttribute="top" secondItem="h5c-QI-nMv" secondAttribute="top" constant="5" id="HqC-3b-XOJ"/>
+                <constraint firstItem="9IE-AY-4Hc" firstAttribute="centerX" secondItem="h5c-QI-nMv" secondAttribute="centerX" id="Iun-A8-yM2"/>
+                <constraint firstItem="9IE-AY-4Hc" firstAttribute="top" secondItem="h5c-QI-nMv" secondAttribute="top" constant="5" id="s04-J4-2pC"/>
+                <constraint firstItem="9IE-AY-4Hc" firstAttribute="width" secondItem="h5c-QI-nMv" secondAttribute="width" id="zVS-hs-2Yi"/>
+            </constraints>
+            <size key="customSize" width="224" height="317"/>
+            <connections>
+                <outlet property="cellView" destination="9IE-AY-4Hc" id="IEu-ql-jP0"/>
+                <outlet property="containerViewHeight" destination="jZf-Dc-jff" id="aFd-jT-NcE"/>
+                <outlet property="footerView" destination="DTQ-AK-BMM" id="uEW-QJ-ehJ"/>
+                <outlet property="footerViewHight" destination="tis-5k-mGq" id="kqq-N3-kNS"/>
+                <outlet property="headerView" destination="vqo-xg-OWy" id="lVZ-O2-M2X"/>
+                <outlet property="headerViewHeight" destination="av2-XW-5WP" id="UTQ-VJ-riB"/>
+                <outlet property="listTableView" destination="n8P-4K-kyo" id="cxR-s5-qXF"/>
+            </connections>
+            <point key="canvasLocation" x="-95" y="-63.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

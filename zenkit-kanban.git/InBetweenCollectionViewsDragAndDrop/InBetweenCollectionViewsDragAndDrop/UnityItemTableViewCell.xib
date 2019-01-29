@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="N6k-Fb-pw4" customClass="UnityItemTableViewCell" customModule="InBetweenCollectionViewsDragAndDrop" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="N6k-Fb-pw4" id="Ezb-ta-gon">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="365" placeholderIntrinsicHeight="39" translatesAutoresizingMaskIntoConstraints="NO" id="JKj-1c-9Bz">
+                        <rect key="frame" x="6" y="1.5" width="363.5" height="40"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="345" placeholderIntrinsicHeight="38.5" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcP-rI-gu4">
+                                <rect key="frame" x="8" y="-0.5" width="348.5" height="40.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pcP-rI-gu4" firstAttribute="centerY" secondItem="JKj-1c-9Bz" secondAttribute="centerY" id="E1k-fn-Pc4"/>
+                            <constraint firstItem="pcP-rI-gu4" firstAttribute="centerX" secondItem="JKj-1c-9Bz" secondAttribute="centerX" id="SEV-gj-mNy"/>
+                            <constraint firstItem="pcP-rI-gu4" firstAttribute="width" secondItem="JKj-1c-9Bz" secondAttribute="width" multiplier="0.96" id="bHd-L4-1Jn"/>
+                            <constraint firstItem="pcP-rI-gu4" firstAttribute="height" secondItem="JKj-1c-9Bz" secondAttribute="height" id="w3i-iT-sAj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="JKj-1c-9Bz" firstAttribute="centerY" secondItem="Ezb-ta-gon" secondAttribute="centerY" id="CEu-17-ggf"/>
+                    <constraint firstItem="JKj-1c-9Bz" firstAttribute="height" secondItem="Ezb-ta-gon" secondAttribute="height" multiplier="0.92" id="ghz-Se-QV9"/>
+                    <constraint firstItem="JKj-1c-9Bz" firstAttribute="centerX" secondItem="Ezb-ta-gon" secondAttribute="centerX" id="hSO-58-D7D"/>
+                    <constraint firstItem="JKj-1c-9Bz" firstAttribute="width" secondItem="Ezb-ta-gon" secondAttribute="width" multiplier="0.97" id="mIi-AC-OHX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="pcP-rI-gu4" id="cQ5-34-T4B"/>
+                <outlet property="view" destination="JKj-1c-9Bz" id="iGI-RW-6hK"/>
+            </connections>
+            <point key="canvasLocation" x="-124" y="-31"/>
+        </tableViewCell>
+    </objects>
+</document>
