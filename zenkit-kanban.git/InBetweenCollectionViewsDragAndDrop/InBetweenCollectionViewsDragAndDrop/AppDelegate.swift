@@ -1,10 +1,7 @@
 //
 //  AppDelegate.swift
 //  InBetweenCollectionViewsDragAndDrop
-//
-//  Created by Jean Joseph on 9/13/17.
-//  Copyright © 2017 Jean Joseph. All rights reserved.
-//
+
 
 import UIKit
 
